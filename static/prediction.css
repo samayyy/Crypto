@@ -1,0 +1,54 @@
+body {
+    background: rgb(41, 46, 102);
+    background: linear-gradient(70deg, rgb(41, 46, 102,1) 7%, rgba(10,21,32,1) 100%);
+    }
+    
+    .home{
+        margin-top: 50px;
+        margin-left: 30px;
+        display: block;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    .home h1{
+        color: rgb(253, 253, 253);
+        font-size: 50px;
+        font-weight: 1000;
+    }
+    .home h2{
+        color: rgb(255, 255, 255);
+        font-size: 35px;
+        font-weight: 700;
+    }
+
+    .graphs{
+        margin-top: 70px;
+        display: flex;
+        flex-direction: row;
+        /* grid-template-columns: 1fr 1fr; */
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: center;
+        align-self: center;
+        justify-self: center;
+    }
+    .graphs g1{
+        padding-left: 100px;
+    }
+    /* .graphs .g1{
+        margin-left: 100px;
+    }
+    .graphs .g2{
+        margin-left: 140px;
+    } */
+
+    .piechart{
+        margin-top: 30px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 40%;
+    }
+    .piechart .g3{
+        margin-left: 50px;
+    }

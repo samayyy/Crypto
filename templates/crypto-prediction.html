@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<header>
+    <title>Cryptic Crpytos</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='home.css') }}">
+</header>
+
+<body>
+    <div class="home">
+        <h1>Cryptocurrency is Now!</h1>
+        <h2>Check out our predictions!</h2>
+    </div>
+    <div class="coin">
+        <form action="{{ url_for('insertintotable') }}" method="POST">
+        <div name="nm">
+            <div class="row">
+                <h2>Symbol</h2>
+                <h2>Coin</h2>
+                <h2>Price</h2>
+                <h2>Volume</h2>
+                <h2>Predict</h2>
+            </div>
+            <hr style="width:1300px;text-align:left;margin-left:15px;margin-right: 15px;">
+            <div class="btc">
+                <img src="{{ url_for('static',filename='bitcoin-btc-logo.png')}}" width="50px" height="50px">
+                <h2>Bitcoin</h2>
+                <h2>{{btc_price}}</h2>
+                <h2>{{btc_volume}}</h2>
+                <button name="nm"value="BTC-USD" class="predict">Predict</button>
+            </div>
+            <hr style="width:1300px;text-align:left;margin-left:15px;margin-right: 15px;">
+            <div class="btc">
+                <img src=" {{url_for('static',filename='ethereum-eth-logo.png')}}" width="50px" height="50px">
+                <h2>Ethereum</h2>
+                <h2>{{eth_price}}</h2>
+                <h2>{{eth_volume}}</h2>
+                <button name="nm" value="ETH-USD" class="predict">Predict</button>
+            </div>
+            <hr style="width:1300px;text-align:left;margin-left:15px;margin-right: 15px;">
+            <div class="btc">
+                <img src=" {{url_for('static',filename='cardano-ada-logo.png')}}" width="50px" height="50px">
+                <h2>Cardano</h2>
+                <h2>{{ada_price}}</h2>
+                <h2>{{ada_volume}}</h2>
+                <button name="nm" value="ADA-USD" class="predict">Predict</button>
+            </div>
+            <hr style="width:1300px;text-align:left;margin-left:15px;margin-right: 15px;">
+            <div class="btc">
+                <img src=" {{url_for('static',filename='binance-coin-bnb-logo.png')}}" width="50px" height="50px">
+                <h2>Binance Coin</h2>
+                <h2>{{bnb_price}}</h2>
+                <h2>{{bnb_volume}}</h2>
+                <button name="nm" value="BNB-USD" class="predict">Predict</button>
+            </div>
+            <hr style="width:1300px;text-align:left;margin-left:15px;margin-right: 15px;">
+            <div class="btc">
+                <img src=" {{url_for('static',filename='tether-usdt-logo.png')}}" width="50px" height="50px">
+                <h2>Tether</h2>
+                <h2>{{usdt_price}}</h2>
+                <h2>{{usdt_volume}}</h2>
+                <button name="nm" value="USDT-USD" class="predict">Predict</button>
+            </div>
+            <hr style="width:1300px;text-align:left;margin-left:15px;margin-right: 15px;">
+
+            <div class="btc">
+                <img src=" {{url_for('static',filename='xrp-xrp-logo.png')}}" width="50px" height="50px">
+                <h2>XRP(Ripple)</h2>
+                <h2>{{xrp_price}}</h2>
+                <h2>{{xrp_volume}}</h2>
+                <button name="nm" value="XRP-USD" class="predict">Predict</button>
+            </div>
+            <hr style="width:1300px;text-align:left;margin-left:15px;margin-right: 15px;">
+            <div class="btc">
+                <img src="{{ url_for('static',filename='solana-sol-logo.png')}}" width="50px" height="50px">
+                <h2>Solana</h2>
+                <h2>{{sol_price}}</h2>
+                <h2>{{sol_volume}}</h2>
+                <button name="nm" value="SOL1-USD" class="predict">Predict</button>
+            </div>
+            <hr style="width:1300px;text-align:left;margin-left:15px;margin-right: 15px;">
+
+            <div class="btc">
+                <img src=" {{url_for('static',filename='polkadot-new-dot-logo.png')}}" width="50px" height="50px">
+                <h2>Polkadot</h2>
+                <h2>{{dot_price}}</h2>
+                <h2>{{dot_volume}}</h2>
+                <button name="nm" value="DOT1-USD" class="predict">Predict</button>
+            </div>
+            <hr style="width:1300px;text-align:left;margin-left:15px;margin-right: 15px;">
+
+            <div class="btc">
+                <img src="{{ url_for('static',filename='usd-coin-usdc-logo.png')}}" width="50px" height="50px">
+                <h2>USD coin</h2>
+                <h2>{{usdc_price}}</h2>
+                <h2>{{usdc_volume}}</h2>
+                <button name="nm" value="USDC-USD" class="predict">Predict</button>
+            </div>
+            <hr style="width:1300px;text-align:left;margin-left:15px;margin-right: 15px;">
+
+            <div class="btc">
+                <img src=" {{url_for('static',filename='dogecoin-doge-logo.png')}}" width="50px" height="50px">
+                <h2>Dogecoin</h2>
+                <h2>{{doge_price}}</h2>
+                <h2>{{doge_volume}}</h2>
+                <button name="nm" value="DOGE-USD" class="predict">Predict</button>
+            </div>
+        </div>
+        </form>
+    </div>
+</body>
+
+
+</html>
